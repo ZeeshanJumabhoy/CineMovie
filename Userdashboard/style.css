@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-item:hover {
+  color: #dd0808;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #dd0808;
+  text-decoration: none;
+}
+
+.container {
+  background-color: #212121;
+  padding-top: 100px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  color: #ffffff;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Change this to your desired color */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+  color: white;
+}
+
+
+.container-c {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  gap: 20px;
+}
+
+.container-c .button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: calc(50% - 10px);
+  max-width: 200px;
+  text-align: center;
+}
+
+.container-c button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+#new.navbar{
+  background-color: white;
+  
+}
+#navbarDropdownLanguage.nav-link,
+#navbarDropdownGenre.nav-link{
+  -webkit-text-fill-color: black;
+  font-size: 20px;
+  font-style: bold;
+}
+#navbarDropdownLanguage.nav-link:hover{
+  -webkit-text-fill-color: red;
+}
+#navbarDropdownGenre.nav-link:hover{
+  -webkit-text-fill-color: red;
+}
+#new .navbar-toggler .navbar-toggler-icon {
+  color: blue !important;
+}
+
+
+.card {
+  background-color: #212121;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-img-top {
+  transform: translateY(-100%);
+}
+
+.card .card-img-top {
+  transition: transform 0.5s ease;
+}
+
+.card .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  backface-visibility: hidden;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-back {
+  transform: translateY(0);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title,
+.card-text {
+  color: white;
+}
+.btno {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+.btno:active {
+  scale: 0.92;
+}
+
+.btno:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.butt {
+  position: relative;
+  padding-right: 30px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+  margin: auto;
+}
+
+.butt, .butt__icon, .butt__text {
+  transition: all 0.3s;
+}
+
+.butt .butt__text {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: 600;
+}
+
+.butt .butt__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.butt .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.butt:hover {
+  background: #34974d;
+}
+
+.butt:hover .butt__text {
+  color: transparent;
+}
+
+.butt:hover .butt__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.butt:active .butt__icon {
+  background-color: #2e8644;
+}
+
+.butt:active {
+  border: 1px solid #2e8644;
+}
+
+.card-back h2 {
+  margin: 60% auto 35% auto;
+  font-size: 26px;
+}
+
+.card-back h2 span {
+  font-size: 20px;
+}
+
+.card-back a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+
+.card-back a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+.social-icons p {
+  color: #0fbbe6; /* Apply color to the entire paragraph */
+}
+.social-icons p span {
+  color: white;
+}
+
+#noResultsMessage{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+/* Price list CSS*/
+.containerr h1{
+  color: #fcfcfc;
+  text-align: center;
+  justify-content:center ;
+  margin-top: 100px;
+  padding-right: 900px;
+}
+
+table {
+  margin-top: -60px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 2px solid #121111;
+  color: black;
+}
+
+th {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+}
+
+
+.containerrr h1{
+  color: #fcfcfc;
+  margin-top: 20px;
+  margin-left: 140px;
+}
+.containerrr ul{
+  color: #fcfcfc;
+  margin-top: 20px;
+  margin-left: 140px;
+  list-style-type: none;
+}
+.containerrr li:before{
+  content: "■"; /* Use a custom bullet point, such as a solid circle */
+  color: #006eff; /* Set the color of the bullet point */
+  font-size: 1.2em; /* Adjust the size of the bullet point */
+  margin-right: 5px;
+}
+.container p{
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.navbar-bran{
+  margin:  auto;
+  display: block;
+  margin-left: 120px;
+}
+
+#nav{
+  background-color: white;
+  padding:40px;
+  margin-top: 30px;
+}
+
+.containerrrr{
+  padding-top: 25px;
+  margin-left: 140px;  
+}
+
+.containerrrr p{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.option {
+  list-style-type: none;
+  margin-right: 250px;
+  font-size: 20px;
+}
+.option li a{
+  color:#333333;
+  text-decoration: none;
+}
+.option li a:hover{
+  color:red;
+}
+.social-iconss {
+  margin-right: 300px;
+  margin-top: -35px;
+}
+.social-iconss a {
+  margin-bottom: 5px; /* Adjust as needed */
+  margin-right: 8px; /* Adjust as needed */
+  
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .option {
+    margin-top: 10px;
+  }
+}
+
+
+/*Contact us section*/
+.text-center{
+  margin-top: 150px;
+}
+/* CSS for Contact Form */
+#contactForm {
+    background-color: black;
+    color: white;
+}
+
+/* CSS for labels */
+label {
+    color: white;
+}
+
+/* CSS for user input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    color: red;
+}
+
+/* CSS for Contact Details */
+.contact-details {
+    color: white;
+}
+.google-map {
+     padding-bottom: 50%;
+     position: relative;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+.submit{
+  display: flex;
+}
+
+/* this is for cart image in the filter one navbar*/
+
+.containeer-r{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+.shopping{
+    position: relative;
+    text-align: right;
+}
+.shopping img{
+    width: 40px;
+  
+}
+.shopping span{
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: -25%;
+  padding: 3px 10px;
+}
+
+/*ticket*/
+.container-md{
+  width: 65%;
+  
+}

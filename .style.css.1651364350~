@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #100f57;
+  font-family: 'Poppins', sans-serif;
+}
+.dropdown-item:hover{ /* Change background color on hover */
+  color: #dd0808; /* Change text color on hover */
+}
+/* Add hover effect on navbar links */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #dd0808; /* Change text color on hover */
+  text-decoration: none; /* Remove default underline on hover */
+}
+.container{
+  padding-top: 100px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 600px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover entire area */
+}
+
+/* Customize carousel caption */
+.carousel-caption {
+  color: #ffffff; /* Change text color to green */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}

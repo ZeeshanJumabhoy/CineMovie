@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nuplex Cinema</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="koi.html">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="price.html">Ticket Info</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Movies
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Now Showing</a></li>
+                <li><a class="dropdown-item" href="#">Upcoming Movies</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="navbar-brand mx-auto" href="#">
+
+      </a>
+      <img src="img1.jpg" class="rounded mx-auto d-block" width="115" height="80">
+      <form class="d-flex mt-3 ms-auto m" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="text-center">
+    <img src="img1.jpg" class="rounded" width="600" height="450">
+  </div>
+
+  <div class="container text-center" id="contactForm">
+      <div class="row">
+          <div class="col-8">
+              <form action="?" method="POST" id="contactForm">
+                  <h2>Contact Us</h2>
+                  <p>Please use the form below to get in touch with us. In the case of complaints and/or corporate enquiries, please provide as much information as possible, so we can address your query accordingly.</p>
+                  <div class="mb-3 row">
+                      <label for="firstName" class="col-sm-2 col-form-label">Name:</label>
+                      <div class="col-sm-5">
+                          <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                      </div>
+                      <div class="col-sm-5">
+                          <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                      <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                      <div class="col-sm-10">
+                          <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                      <label for="phone" class="col-sm-2 col-form-label">Phone:</label>
+                      <div class="col-sm-10">
+                          <input type="tel" class="form-control" id="phone" placeholder="e.g. 03001234567">
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                      <label for="type" class="col-sm-2 col-form-label">Type:</label>
+                      <div class="col-sm-10">
+                          <select class="form-select" id="type">
+                              <option selected>Select Type</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="complaint">Complaint</option>
+                              <option value="enquiry">Enquiry</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                      <label for="feedback" class="col-sm-2 col-form-label">Feedback:</label>
+                      <div class="col-sm-10">
+                          <textarea class="form-control" id="feedback" rows="3"></textarea>
+                      </div>
+                  </div>
+                  <div class="mb-3 row">
+                      <label for="captcha" class="col-sm-2 col-form-label">Enter Captcha:</label>
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control" id="captcha" placeholder="Captcha">
+                      </div>
+                  </div>
+                <div class="g-recaptcha" data-sitekey="6Lf_EXEpAAAAAJ9oA0XpvwL9USTPR23sp2iXBVKN"></div>
+                <br/>
+                <input class="submit" type="submit" value="Submit">
+              </form>
+          </div>
+          <div class="col-4">
+            <h3>Contact Details</h3>
+            <p class="contact-details">Address: Cinema Europa
+            123 Boulevard de l'Europe
+            Ville de l'Ombre, Ombre-sur-Neige
+            Pays du Nord
+</p>
+            <p class="contact-details">Recommended approach:Nearby Area:
+              Cinema Europa is located in the quaint neighborhood of Ombre-sur-Neige, nestled in the picturesque Pays du Nord region.</p>
+            <p class="contact-details">Cinema Europa Phone: +33 9 87 65 43 21</p>
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2845.930732702645!2d11.32857417574635!3d44.49608609751038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd48def08eadf%3A0x870eb58862d52e80!2sCinema%20Europa!5e0!3m2!1sen!2s!4v1707810830855!5m2!1sen!2s" width="350" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <nav class="navbar" id="nav">
+    <div class="container-fluid">
+
+      <img src="img1.jpg" class="navbar-bran" width="150" height="120">
+      <div class="social-iconss">
+        <h4>STAY IN TOUCH</h4>
+        <a href="#"><img src="https://png.pngtree.com/element_our/sm/20180515/sm_5afaf0c36298b.jpg" alt="Facebook"
+            width="45" height="40"></a>
+        <a href="#"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/X_icon_2.svg/2048px-X_icon_2.svg.png"
+            alt="Twitter" width="35" height="30"></a>
+        <a href="#"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+            alt="Instagram" width="35" height="30"></a>
+      </div>
+      <ul class="option">
+        <li><a href="about.html"">About Us</a></li>
+        <li><a href="price.html">Ticket Info</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="containerrrr">
+    <p>© Copyright 2024 ZSM Management System. All Rights Reserved. Can be used by Anyone </p>
+  </div>
+
+</body>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
